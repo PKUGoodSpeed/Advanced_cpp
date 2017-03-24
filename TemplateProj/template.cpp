@@ -32,7 +32,7 @@
 // From local directory
 #include"example.hpp"
 
-//Marcos: seldom used
+// Macros: seldom used
 #define REP(i,s,n) for(int (i)=s; (i)<(int)(n);(i)++)
 #define RIT(it,c) for(__typeof(c.begin()) it = c.begin();it!=c.end();it++)
 #define ALL(x) x.begin(), x.end()
@@ -41,30 +41,41 @@
 
 using namespace std;
 
-//Typedefs
+// Typedefs
 typedef long long LL;
 typedef vector<int> vi;
-typedef pair<int,int> ii;
+typedef pair<int,int>ii;
 typedef vector<LL> vL;
 typedef vector<bool> vb;
 
-int main(int argc, const char * argv[]) {
-	//For accelerating I/O from std::cin and std::cout
+// Main function
+int main(){
+	// For accelerating I/O from std::cin and std::cout
 	std::ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0);
-	
-	//Input treatments here
-	
+
+	// Input treatments here
+
 	clock_t start_time = clock(), end_time;
-	//Actual code block here
+	// Actual code block here
+
 	HelloWorld test;
 	test.Process();
-	
-	//Output computational time
+
+	// Output computational time
 	end_time = clock();
 	double d_t = double(end_time - start_time)/CLOCKS_PER_SEC;
 	cout<< "Time spent: " << d_t << " s" <<endl;
-	
-	//Show ending
+
+	// Show ending
 	cout<< "DONE!" <<endl;
 	return 0;
 }
+
+
+
+
+
+
+
+
+

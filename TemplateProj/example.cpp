@@ -1,8 +1,8 @@
 #include<iostream>
-#include "example.hpp"
+#include"example.hpp"
 
 using namespace std;
 
 void HelloWorld::Process(){
-	cout<< "Hello world!" <<endl;
+	cout<< "Hello World!" <<endl;
 }
